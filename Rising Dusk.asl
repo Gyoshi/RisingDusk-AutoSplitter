@@ -38,6 +38,7 @@ split
     // Split 5s after Odokuro is defeated (on white-out)
     if (vars.endCheck && timer.CurrentTime.RealTime >= vars.endTime + TimeSpan.FromSeconds(5))
     {
+        vars.endCheck = false;
         return true;
     }
 }
