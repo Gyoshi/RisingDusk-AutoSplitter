@@ -26,7 +26,6 @@ update
     {
         vars.endCheck = true;
         vars.endTime = timer.CurrentTime.RealTime;
-        //print("___DEFEAT : \nold : " + old.scene + "\ncurrent : " + current.scene + "\ntime : " + vars.endTime);
     } 
 }
 split
@@ -34,7 +33,6 @@ split
     // Split when entering overworld 
     if (old.scene != 24 && current.scene == 24)
     {
-        //print("___TO_MAP : \nold : " + old.scene + "\ncurrent : " + current.scene);
         return true;
     }
     // Split 4.66s after Odokuro is defeated (on white-out)
